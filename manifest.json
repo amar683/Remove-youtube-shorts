@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Remove YouTube Shorts",
+  "version": "1.0",
+  "description": "Removes Shorts from YouTube homepage and video watch page.",
+  "permissions": [],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["contents.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
